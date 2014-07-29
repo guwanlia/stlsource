@@ -1,3 +1,6 @@
+#ifndef _STL_ITERATOR_H_
+#define _STL_ITERATOR_H_
+
 #include <cstddef>
 
 struct InItorTag {};
@@ -46,3 +49,24 @@ struct ItorTraits<const T*>
     typedef const T* ptr;
     typedef const T& ref;
 };
+
+template <typename T>
+inline typename ItorTraits<T>::itorCategory ItorCategory(const T&)
+{
+    typedef typename ItorTraits<T>::itorCategory category;
+    return category();
+}
+
+template <typename T>
+inline typename ItorTraits<T>::diffType* DistanceType(const T&)
+{
+    return static_cast<typename ItorTraits<T>::diffType*>(0);
+}
+
+template <typename T>
+inline typename ItorTraits<T>::valueType* ValueType(const T&)
+{
+    return static_cast<typename ItorTraits<T>::valueType*>(0);
+}
+
+#endif /* _STL_ITERATOR_H_ */

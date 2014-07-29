@@ -1,148 +1,148 @@
 #ifndef _TYPE_TRAITS_H_
 #define _TYPE_TRAITS_H_
 
-struct trueType{};
-struct falseType{};
+struct TrueType{};
+struct FalseType{};
 
 template <typename type>
-struct typeTraits
+struct TypeTraits
 {
-    typedef trueType thisDummyMemberMustBeFirst;
-    typedef falseType hasTrivDflContor;
-    typedef falseType hasTrivCopyContor;
-    typedef falseType hasTrivAsgnOpt;
-    typedef falseType hasTrivDesor;
-    typedef falseType isPodType;
+    typedef TrueType thisDummyMemberMustBeFirst;
+    typedef FalseType hasTrivDflContor;
+    typedef FalseType hasTrivCopyContor;
+    typedef FalseType hasTrivAsgnOpt;
+    typedef FalseType hasTrivDesor;
+    typedef FalseType isPodType;
 };
 
 template <>
-struct typeTraits<char>
+struct TypeTraits<char>
 {
-    typedef trueType hasTrivDflContor;
-    typedef trueType hasTrivCopyContor;
-    typedef trueType hasTrivAsgnOpt;
-    typedef trueType hasTrivDesor;
-    typedef trueType isPodType;
+    typedef TrueType hasTrivDflContor;
+    typedef TrueType hasTrivCopyContor;
+    typedef TrueType hasTrivAsgnOpt;
+    typedef TrueType hasTrivDesor;
+    typedef TrueType isPodType;
 };
 
 template <>
-struct typeTraits<signed char>
+struct TypeTraits<signed char>
 {
-    typedef trueType hasTrivDflContor;
-    typedef trueType hasTrivCopyContor;
-    typedef trueType hasTrivAsgnOpt;
-    typedef trueType hasTrivDesor;
-    typedef trueType isPodType;
+    typedef TrueType hasTrivDflContor;
+    typedef TrueType hasTrivCopyContor;
+    typedef TrueType hasTrivAsgnOpt;
+    typedef TrueType hasTrivDesor;
+    typedef TrueType isPodType;
 };
 
 template <>
-struct typeTraits<unsigned char>
+struct TypeTraits<unsigned char>
 {
-    typedef trueType hasTrivDflContor;
-    typedef trueType hasTrivCopyContor;
-    typedef trueType hasTrivAsgnOpt;
-    typedef trueType hasTrivDesor;
-    typedef trueType isPodType;
+    typedef TrueType hasTrivDflContor;
+    typedef TrueType hasTrivCopyContor;
+    typedef TrueType hasTrivAsgnOpt;
+    typedef TrueType hasTrivDesor;
+    typedef TrueType isPodType;
 };
 
 template <>
-struct typeTraits<short>
+struct TypeTraits<short>
 {
-    typedef trueType hasTrivDflContor;
-    typedef trueType hasTrivCopyContor;
-    typedef trueType hasTrivAsgnOpt;
-    typedef trueType hasTrivDesor;
-    typedef trueType isPodType;
+    typedef TrueType hasTrivDflContor;
+    typedef TrueType hasTrivCopyContor;
+    typedef TrueType hasTrivAsgnOpt;
+    typedef TrueType hasTrivDesor;
+    typedef TrueType isPodType;
 };
 
 template <>
-struct typeTraits<unsigned short>
+struct TypeTraits<unsigned short>
 {
-    typedef trueType hasTrivDflContor;
-    typedef trueType hasTrivCopyContor;
-    typedef trueType hasTrivAsgnOpt;
-    typedef trueType hasTrivDesor;
-    typedef trueType isPodType;
+    typedef TrueType hasTrivDflContor;
+    typedef TrueType hasTrivCopyContor;
+    typedef TrueType hasTrivAsgnOpt;
+    typedef TrueType hasTrivDesor;
+    typedef TrueType isPodType;
 };
 
 template <>
-struct typeTraits<int>
+struct TypeTraits<int>
 {
-    typedef trueType hasTrivDflContor;
-    typedef trueType hasTrivCopyContor;
-    typedef trueType hasTrivAsgnOpt;
-    typedef trueType hasTrivDesor;
-    typedef trueType isPodType;
+    typedef TrueType hasTrivDflContor;
+    typedef TrueType hasTrivCopyContor;
+    typedef TrueType hasTrivAsgnOpt;
+    typedef TrueType hasTrivDesor;
+    typedef TrueType isPodType;
 };
 
 template <>
-struct typeTraits<unsigned int>
+struct TypeTraits<unsigned int>
 {
-    typedef trueType hasTrivDflContor;
-    typedef trueType hasTrivCopyContor;
-    typedef trueType hasTrivAsgnOpt;
-    typedef trueType hasTrivDesor;
-    typedef trueType isPodType;
+    typedef TrueType hasTrivDflContor;
+    typedef TrueType hasTrivCopyContor;
+    typedef TrueType hasTrivAsgnOpt;
+    typedef TrueType hasTrivDesor;
+    typedef TrueType isPodType;
 };
 
 template <>
-struct typeTraits<long>
+struct TypeTraits<long>
 {
-    typedef trueType hasTrivDflContor;
-    typedef trueType hasTrivCopyContor;
-    typedef trueType hasTrivAsgnOpt;
-    typedef trueType hasTrivDesor;
-    typedef trueType isPodType;
+    typedef TrueType hasTrivDflContor;
+    typedef TrueType hasTrivCopyContor;
+    typedef TrueType hasTrivAsgnOpt;
+    typedef TrueType hasTrivDesor;
+    typedef TrueType isPodType;
 };
 
 template <>
-struct typeTraits<unsigned long>
+struct TypeTraits<unsigned long>
 {
-    typedef trueType hasTrivDflContor;
-    typedef trueType hasTrivCopyContor;
-    typedef trueType hasTrivAsgnOpt;
-    typedef trueType hasTrivDesor;
-    typedef trueType isPodType;
+    typedef TrueType hasTrivDflContor;
+    typedef TrueType hasTrivCopyContor;
+    typedef TrueType hasTrivAsgnOpt;
+    typedef TrueType hasTrivDesor;
+    typedef TrueType isPodType;
 };
 
 template <>
-struct typeTraits<float>
+struct TypeTraits<float>
 {
-    typedef trueType hasTrivDflContor;
-    typedef trueType hasTrivCopyContor;
-    typedef trueType hasTrivAsgnOpt;
-    typedef trueType hasTrivDesor;
-    typedef trueType isPodType;
+    typedef TrueType hasTrivDflContor;
+    typedef TrueType hasTrivCopyContor;
+    typedef TrueType hasTrivAsgnOpt;
+    typedef TrueType hasTrivDesor;
+    typedef TrueType isPodType;
 };
 
 template <>
-struct typeTraits<double>
+struct TypeTraits<double>
 {
-    typedef trueType hasTrivDflContor;
-    typedef trueType hasTrivCopyContor;
-    typedef trueType hasTrivAsgnOpt;
-    typedef trueType hasTrivDesor;
-    typedef trueType isPodType;
+    typedef TrueType hasTrivDflContor;
+    typedef TrueType hasTrivCopyContor;
+    typedef TrueType hasTrivAsgnOpt;
+    typedef TrueType hasTrivDesor;
+    typedef TrueType isPodType;
 };
 
 template <>
-struct typeTraits<long double>
+struct TypeTraits<long double>
 {
-    typedef trueType hasTrivDflContor;
-    typedef trueType hasTrivCopyContor;
-    typedef trueType hasTrivAsgnOpt;
-    typedef trueType hasTrivDesor;
-    typedef trueType isPodType;
+    typedef TrueType hasTrivDflContor;
+    typedef TrueType hasTrivCopyContor;
+    typedef TrueType hasTrivAsgnOpt;
+    typedef TrueType hasTrivDesor;
+    typedef TrueType isPodType;
 };
 
 template <typename T>
-struct typeTraits<T*>
+struct TypeTraits<T*>
 {
-    typedef trueType hasTrivDflContor;
-    typedef trueType hasTrivCopyContor;
-    typedef trueType hasTrivAsgnOpt;
-    typedef trueType hasTrivDesor;
-    typedef trueType isPodType;
+    typedef TrueType hasTrivDflContor;
+    typedef TrueType hasTrivCopyContor;
+    typedef TrueType hasTrivAsgnOpt;
+    typedef TrueType hasTrivDesor;
+    typedef TrueType isPodType;
 };
 
 #endif /* _TYPE_TRAITS_H_ */
